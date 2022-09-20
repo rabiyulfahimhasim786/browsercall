@@ -67,6 +67,13 @@ def call():
 
     return str(response.append(dial))
 
+@app.route('/calls')
+def webcall():
+    return render_template(
+        'call.html',
+        title="Desss browser calls",
+    )
+
 
 if __name__ == '__main__':
     #app.run(host='0.0.0.0', port=3000, debug=True)
